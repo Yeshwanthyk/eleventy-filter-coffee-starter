@@ -2,6 +2,8 @@
 
 A simple eleventy starter kit as a base for easily setting up new projects.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0042a4f8-60c8-4127-9b72-2ccae2d7b841/deploy-status)](https://app.netlify.com/sites/filtercoffee/deploys)
+
 ## Features
 
 - Gulp integration for fonts and sass
@@ -22,6 +24,10 @@ npm install
 
 - Run `npm start` for a development server and live reloading
 - Run `npm run production` to generate a production build
+
+## Deploy a fork of this template to Netlify
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Yeshwanthyk/eleventy-filter-coffee-starter)
 
 ## CSS
 
