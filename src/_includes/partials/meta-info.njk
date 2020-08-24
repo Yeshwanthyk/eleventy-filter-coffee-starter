@@ -1,0 +1,22 @@
+{%- set absolutePageUrl -%}{{ page.url | url | absoluteUrl(site.url) }}{%- endset -%}
+
+{# General #}
+<meta name="description" content="{{ description or site.description }}">
+<link rel="canonical" href="{{ absolutePageUrl }}">
+
+{# Open Graph #}
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ title or site.title }}">
+<meta property="og:description" content="{{ description  or site.description }}">
+<meta property="og:url" content="{{ absolutePageUrl }}">
+<meta property="og:locale" content="{{ site.locale }}">
+<meta name="twitter:card" content="{% if image -%}summary_large_image{% else %}summary{% endif %}">
+{%- if image -%}
+    <meta property="og:image" content="{{ image | url | absoluteUrl(site.url) }}">
+{%- endif -%}
+
+{# Favicon #}
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicon/apple-touch-icon.png' | url }}">
+<link rel="icon" type="image/png" href="{{ '/assets/favicon/favicon-32x32.png' | url }}" sizes="32x32">
+<link rel="icon" type="image/png" href="{{ '/assets/favicon/favicon-16x16.png' | url }}" sizes="16x16">
+<link rel="shortcut icon" href="{{ '/assets/favicon/favicon.ico' | url }}">
